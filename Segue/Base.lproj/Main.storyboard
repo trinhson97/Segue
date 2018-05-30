@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="91a-13-xwh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Son" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRP-IM-Z0z">
+                                <rect key="frame" x="0.0" y="318" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.7315477988959026" blue="0.70985321076779462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XRP-IM-Z0z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2aD-ct-K1L"/>
+                            <constraint firstItem="XRP-IM-Z0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="72p-2q-uN0"/>
+                            <constraint firstItem="XRP-IM-Z0z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K00-lg-x49"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wDT-RT-0U6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JMG-Li-ZIG">
+                            <connections>
+                                <segue destination="boU-z7-kqr" kind="show" identifier="passdata" id="rMl-xE-r0P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="asd" destination="XRP-IM-Z0z" id="J74-9h-0c4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="70.614692653673174"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="SYL-jW-7BH">
+            <objects>
+                <viewController id="boU-z7-kqr" customClass="DetailViewController" customModule="Segue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Y0-uM-P8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-n0-Ars">
+                                <rect key="frame" x="0.0" y="318.5" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.68519878059439188" green="1" blue="0.77445183449698951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b69-5i-Ilg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cbG-n0-Ars" firstAttribute="leading" secondItem="oVr-kd-8ny" secondAttribute="leading" id="3hV-yA-7FN"/>
+                            <constraint firstItem="cbG-n0-Ars" firstAttribute="centerY" secondItem="1Y0-uM-P8f" secondAttribute="centerY" id="DOe-b1-sPm"/>
+                            <constraint firstItem="cbG-n0-Ars" firstAttribute="centerX" secondItem="1Y0-uM-P8f" secondAttribute="centerX" id="i47-LF-bSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oVr-kd-8ny"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameText" destination="cbG-n0-Ars" id="bE4-Fp-6wF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7P-6w-nPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="71"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0k9-SN-ZPK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="91a-13-xwh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k8K-0s-1ch">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XM3-V4-3SW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="35K-nm-ENk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Deb-G9-bgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="71"/>
+        </scene>
+    </scenes>
+</document>
